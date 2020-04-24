@@ -8,7 +8,7 @@ MULTICORE = R6::R6Class("MULTICORE",
 
     public = list(
         initialize = function(...) {
-            super$initialize(..., node="localhost")
+            super$initialize(..., node="127.0.0.1")
         },
 
         submit_jobs = function(n_jobs, ...) {
